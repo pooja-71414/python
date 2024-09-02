@@ -5,3 +5,10 @@ for i in range(1,11):
 for i in range(5):
     print(i)
 '''
+# while loop
+'''
+a=1
+while a<11:
+    print(a)
+    a+=1
+'''
