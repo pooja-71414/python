@@ -7,7 +7,7 @@ server.bind((host,port))
 server.listen(2)
 
 while True:
-    con,add=server.accept()
-    print('get connection from : ',add)
-    con.send(bytes('your connection created successfully ','utf-8'))
-    con.close()
+    c,addr=server.accept()
+    print('get connection from : ',addr)
+    c.send(bytes('your connection created successfully ',"utf-8"))
+    c.close()
