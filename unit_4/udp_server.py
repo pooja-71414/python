@@ -2,7 +2,6 @@ import socket
 server=socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
 host=socket.gethostname()
 port=9001
-# address=(host,port)
 server.bind((host,port))
 
 msg,address=server.recvfrom(1024)
